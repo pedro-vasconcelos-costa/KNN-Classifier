@@ -1,6 +1,7 @@
 # KNN-Classifier
 
 python code: https://github.com/pedro-vasconcelos-costa/KNN-Classifier/blob/main/iris%20KNN%20(v01).py
+
 dataset: https://github.com/pedro-vasconcelos-costa/KNN-Classifier/blob/main/Iris.csv
 
 ## 01 - PROJECT & DATA
@@ -43,16 +44,27 @@ The optimal number of k-neighbours will vary according to the problem and data i
 
 ![image](https://github.com/pedro-vasconcelos-costa/KNN-Classifier/blob/main/img_%20euclidean.png)
 
-Ploting matrices:
+### Ploting confusion matrices:
 
 ![image](https://github.com/pedro-vasconcelos-costa/KNN-Classifier/blob/main/img_%20matrix%20plot.png)
 
-![image](https://github.com/pedro-vasconcelos-costa/KNN-Classifier/blob/main/img_%20matrix%20plot.png)
+![image](https://github.com/pedro-vasconcelos-costa/KNN-Classifier/blob/main/k5%20test%203.png)
 
 ## 03 - PERFORMANCE EVALUATION
 
 While 96.67% accuracy achieved with the initial configuration, it is always advisable to test variations on the algorithm parameters, aiming to reach optimal performance. Were tested 3 variations in test sample size, 20%, 30% and 40%, and 4 variations in the number of K-Neighbours considered, 2, 3, 5 and 10. The highest accuracy score of 100% was achieved with 10-Nearest Neighbours and test sample corresponding to 20% of the total instances of data available, while 93.33%, the lowest, was obtained considering only 2 neighbour instances and the same 20% training/test split, which was the data allocation more consistent across the variations of k values.
 
 ![image](https://github.com/pedro-vasconcelos-costa/KNN-Classifier/blob/main/img_%20performance.png)
+
+It is important to note that we are dealing with a relatively small amount of data and the differences in accuracy levels could be enlarged when working with larger and more complex datasets, as well as the 100% achieved by the model for the iris set, may not maintain its 0-error performance if applied to other projects.![image](https://user-images.githubusercontent.com/130906484/232328418-c55df557-b872-40a3-b864-c8dd5c41a251.png)
+
+### Comparison to other researched approaches:
+
+![image](https://github.com/pedro-vasconcelos-costa/KNN-Classifier/blob/main/img_%20accuracy.png)
+
+# 04 - CHALLENGES & CONCLUSION
+Throughout the making of this project, it was possible to identify that K-Nearest Neighbour algorithms are indeed of a simple construct, but often simple problems ask for simple and efficient solutions. It also brings some advantages, parameters are relatively easy to modify and it allows for thorough understanding of the algorithm’s functionalities and nuances of the project. There is plenty of documentation and research on the topic, tools and compatibility with developing environments. We were able to experiment changes in training/test splits and number of k-neighbours to consider, isolating the effects of each manipulation and extracting valuable insights from the problem as it was demonstrated in this report.
+
+One of the biggest challenges was the limited size and complexity of the data. Running a test sample of 30 instances makes for a single error to represent a great variation in performance, what could be misleading. Given the small number of incorrect classifications across all variations applied, we can speculate that the dataset only contained a few instances of data to actually challenge the efficiency of the model. At the same time the iris-flower classification problem was tackled by a wide range of different models and techniques, which allows for a good amount of information for comparison between those systems and when contrasting the KNN with them we can state that it can produce satisfactory results. Secondly, the simplicity of construction, demanded computational power and running time make possible integrations with other techniques, producing hybrid systems, what represents a great opportunity for improvement. 
 
 

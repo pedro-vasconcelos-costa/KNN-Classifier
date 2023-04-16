@@ -1,5 +1,8 @@
 # KNN-Classifier
 
+python code: https://github.com/pedro-vasconcelos-costa/KNN-Classifier/blob/main/iris%20KNN%20(v01).py
+dataset: https://github.com/pedro-vasconcelos-costa/KNN-Classifier/blob/main/Iris.csv
+
 ## 01 - PROJECT & DATA
 While there are several other Machine Learning techniques capable of solving much more complex problems and tackling grater dimensions of data and number of parameters involved, choosing some of them for this specific task could be considered an overkill. The use of AI must follow a sustainable proposition and justify the amount of time and resources dedicated to its implementation. The KNN model bears plenty of capability to handle the classification of the Iris Flower dataset. 
 
@@ -35,3 +38,21 @@ Once variables are defined and encoded, the data must be randomized and divided 
 ![image](https://github.com/pedro-vasconcelos-costa/KNN-Classifier/blob/main/img_%20split%20train%20test.png)
 
 ![image](https://github.com/pedro-vasconcelos-costa/KNN-Classifier/blob/main/img_%20data%20sample.png)
+
+The optimal number of k-neighbours will vary according to the problem and data in hand, being advisable to set the k value to account for more than 02 neighbours. We started with an arbitrary value of 5 and experimented variations. It is also necessary to define the metric to calculate the distances. The chosen metric for this model is the Euclidean distance, which on scikit-learn’s library is defined by the variation p=2 of the Minowski formula. It derives from the Pythagoras theorem and can be applied on our case of 2-dimentional plans. For 3D coordinates, the z difference to the power of 2 must be added to the sum of square roots. The weight assigned to each instance was kept the default configuration uniform, the other options would be distance, where each point is weighted by the inverse of their distance or a customised function.
+
+![image](https://github.com/pedro-vasconcelos-costa/KNN-Classifier/blob/main/img_%20euclidean.png)
+
+Ploting matrices:
+
+![image](https://github.com/pedro-vasconcelos-costa/KNN-Classifier/blob/main/img_%20matrix%20plot.png)
+
+![image](https://github.com/pedro-vasconcelos-costa/KNN-Classifier/blob/main/img_%20matrix%20plot.png)
+
+## 03 - PERFORMANCE EVALUATION
+
+While 96.67% accuracy achieved with the initial configuration, it is always advisable to test variations on the algorithm parameters, aiming to reach optimal performance. Were tested 3 variations in test sample size, 20%, 30% and 40%, and 4 variations in the number of K-Neighbours considered, 2, 3, 5 and 10. The highest accuracy score of 100% was achieved with 10-Nearest Neighbours and test sample corresponding to 20% of the total instances of data available, while 93.33%, the lowest, was obtained considering only 2 neighbour instances and the same 20% training/test split, which was the data allocation more consistent across the variations of k values.
+
+![image](https://github.com/pedro-vasconcelos-costa/KNN-Classifier/blob/main/img_%20performance.png)
+
+

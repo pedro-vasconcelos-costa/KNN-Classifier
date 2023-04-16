@@ -28,10 +28,10 @@ Import and prepare the data:
 
 Remove the index labels and separate it into a variable x with the parameter values and variable y with the classes. Encode the class variable into numerical values 0-setosa, 1-versicolor, and 3-virginica and fit them accordingly, the x instances with their respective y class with sklearn’s functions LabelEncoder & fit_transform.
 
-![image](https://user-images.githubusercontent.com/130906484/232326482-b1e9a8d6-8c49-4827-b49d-3340d674b418.png)
+![image](https://github.com/pedro-vasconcelos-costa/KNN-Classifier/blob/main/img_%20prepare%20data.png)
 
 Once variables are defined and encoded, the data must be randomized and divided into training and test sets. This process can be achieved through the train_test_split function. Initially, I arbitrarily configured the data split to 20% test and 80% training, and experimented variations to verify changes in performance.
  
-![image](https://user-images.githubusercontent.com/130906484/232326529-f5424bef-9056-4b75-a571-86fa6dfbc1e5.png)
+![image](https://github.com/pedro-vasconcelos-costa/KNN-Classifier/blob/main/img_%20split%20train%20test.png)
 
 ![image](https://github.com/pedro-vasconcelos-costa/KNN-Classifier/blob/main/img_%20data%20sample.png)

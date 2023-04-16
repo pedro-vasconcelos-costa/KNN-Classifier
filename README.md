@@ -21,7 +21,7 @@ Libraries used:
 -> Matplotlib: plots data into graphs 
 -> scikit-learn: library dedicated to machine learning algorithms 
 
-![image](https://user-images.githubusercontent.com/130906484/232326339-0649b988-6d77-4dbc-bab9-76e8a82691c8.png)
+![image](https://github.com/pedro-vasconcelos-costa/KNN-Classifier/blob/main/img_%20libraries.png)
 
 	  
 Import and prepare the data:
@@ -34,4 +34,4 @@ Once variables are defined and encoded, the data must be randomized and divided 
  
 ![image](https://user-images.githubusercontent.com/130906484/232326529-f5424bef-9056-4b75-a571-86fa6dfbc1e5.png)
 
-![image](https://user-images.githubusercontent.com/130906484/232326538-b0d458d7-dbf0-43f8-89a7-7baea5c34a4a.png)
+![image](https://github.com/pedro-vasconcelos-costa/KNN-Classifier/blob/main/img_%20data%20sample.png)
